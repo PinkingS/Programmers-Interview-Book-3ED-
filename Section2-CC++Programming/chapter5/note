@@ -93,4 +93,12 @@ a=a^b;
 b=a^b;
 a=a^b;
 
+5.7
 
+面试例题1
+
+http://blog.csdn.net/jiqiren007/article/details/5933599  extern "C"详解
+
+面试例题3
+
+http://blog.csdn.net/wqvbjhc/article/details/4107268  C与C++的区别

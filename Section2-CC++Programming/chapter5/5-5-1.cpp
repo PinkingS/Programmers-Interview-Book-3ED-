@@ -11,5 +11,7 @@ int main(){
 	printf("right shift for signed int will add 0s or 1s according to the signe bit : %8x\n",d>>8);
 	printf("sizeof(~a) : %d\n",sizeof(~a));
 	printf("b=%d\n",b);
+	cout << "\n";
+	cout << "hihihih";
 	return 0;
 }
