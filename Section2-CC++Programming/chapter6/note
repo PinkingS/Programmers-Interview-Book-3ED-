@@ -30,4 +30,44 @@
 
 那么COM(1+2,3)会得到错误的结果
 
+6.2
+
+面试例题1
+
+将const修饰的常量说成是'只读变量'更好一些。
+
+c const关键字理解
+http://blog.csdn.net/mcgrady_tracy/article/details/8517951
+
+C、C++中const关键字理解
+http://www.cnblogs.com/yc_sunniwell/archive/2010/07/14/1777416.html
+
+const修饰指针要从右往左读。
+
+面试例题2
+
+const和\#define的区别补充几点：
+
++ define宏是在预处理阶段展开的，const常量在编译运行阶段使用。
++ const定义的只读变量是有数据类型的，编译器可以对其进行数据类型检查，而#define宏定义的常量只是进行简单的字符`替换`，没有类型检查，且有时还会产生边际效应。
++ 有些调试程序可对const进行调试，但不对#define进行调试。
++ 当定义局部变量时，const作用域仅限于定义局部变量的函数体内。但用#define时其作用域不仅限于定义局部变量的函数体内，而是从定义点到整个程序的结束点。但也可以用#undef取消其定义从而限定其作用域范围。
+
+另外：
+
+C++中支持\#define是因为要兼容C，C++中不提倡用\#define来定义常量.
+
+\#define也可以定义带参数的宏，C++中使用inline函数来代替。
+
+补充关于指针和引用的一点：
+
+指针和引用的区别很简单，就是引用更简洁，更安全。因为引用声明是必须初始化。 引用更接近const指针，一旦与某个变量关联，就将一直效忠于他。
+
+补充关于const指针的一点：
+
+const指针可以接受const和非const地址，但是非const指针只能接受非const地址。所以const指针的能力更强一些，所以尽量多用const指针，这是一种习惯。
+
+Const和＃define大比拼
+http://www.programfan.com/blog/article.asp?id=28476
+
 
