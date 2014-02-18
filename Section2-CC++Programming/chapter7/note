@@ -27,7 +27,7 @@ char *c = "world";
 
 sizeof(c)=4
 
-strlen(c) = 6
+strlen(c) = 5
 
 ##7.3 ##
 
