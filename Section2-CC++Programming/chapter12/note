@@ -1,0 +1,11 @@
+##12.1 位制转换##
+
+**面试例题7**
+
+dynamic cast用于将基类对象指针（或引用）cast到派生类指针，探测性的，不一定成功。
+
+dynamic_cast在将基类cast到子类时，基类必须要有虚函数，否则会报错'CBase不是多态类型',因为是设计到RTTI的
+
+CBase *pb = new CDerived
+
+CDerived *pd = dynamic_cast<CDerived*>(pb);
